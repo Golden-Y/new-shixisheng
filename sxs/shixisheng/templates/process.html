@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>实习流程</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	 <meta name="description" content="Your description">
+    <meta name="keywords" content="Your,Keywords">
+    <meta name="author" content="ResponsiveWebInc">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+		<link href="http://demo.cssmoban.com/cssthemes2/dgfp_10_cvf/css/style.css" rel="stylesheet" type="text/css"  />
+		<link href="http://responsivewebinc.com/premium/renata2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://responsivewebinc.com/premium/renata2/css/animate.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/sty.css" rel="stylesheet">
+</head>
+
+
+<body>
+	    <!-- Head Start -->
+    <div class="nav-head">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <!-- Logo and Head Text -->
+              <div class="logo">
+                <!-- Logo Icon and Heading -->
+                <img src="http://responsivewebinc.com/premium/renata2/img/logo.png" class="img-responsive" alt="" /><span>{{head_name_1.name}}</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="navbar-nav navbar-right">
+              <li><a href="http://127.0.0.1:8000">{{navigation_1.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/allcompany">{{navigation_2.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/be">{{navigation_3.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/youxiu">{{navigation_5.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/pin.html">{{navigation_6.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/liucheng">{{navigation_7.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/faq">{{navigation_8.name}}</a></li>
+              
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+    </div>
+
+
+	
+		  <div class="about" id="about">
+		  	<div class="wrap">
+		  		<h3>实习流程</h3>
+		  		<p class="a">sdfgsdfgsdfgsdfg</p>
+				<div class="about-time-line">
+				{%for i in p%}
+					<li>
+							<div class="{%  cycle 'cbp_tmicon img1' 'cbp_tmicon1 img2' 'cbp_tmicon2 img3' 'cbp_tmicon3 img4' 'cbp_tmicon4 img5' %}" > 
+							<img src="/media/{{i.img}}">
+
+							</div>
+							<div class="{%  cycle 'cbp_tmlabel' 'cbp_tmlabel cbp_tmlabel1' %}">
+								<h2>{{i.name}}</h2>
+								<p>{{i.intr}}</p>
+							</div>
+					</li>
+				{%endfor%}
+					
+					<div class="clear"> </div>
+   		   </div>
+         <div style="padding-top:50px;">
+   		   					<button style="font-size:15pt;width:10;height:50;background:#654EF2;display: block;margin:0 auto;color: #ffffff;padding: 18px 40px;font-style:normal;font-family:幼圆; border-radius:100px;-webkit-border-radius:100px;-moz-border-radius:50px; outline:none; "  onclick="window.location.href='jianli'">创建简历</button>
+                </div>
+   		 </div>    
+   		</div>
+ 	<script src="http://responsivewebinc.com/premium/renata2/js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="http://responsivewebinc.com/premium/renata2/js/bootstrap.min.js"></script>
+
+   	
+</body>
+</html>

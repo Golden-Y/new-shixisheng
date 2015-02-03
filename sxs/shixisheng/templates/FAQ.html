@@ -1,0 +1,138 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{navigation_8.name}}</title>
+<!-- Bootstrap Themes -->
+<link href="static/css/allcom/lightGreen-blueGrey-b.css" rel="stylesheet" id="bootstrapTheme">
+<link href="static/css/allcom/lightGreen-blueGrey-m.css" rel="stylesheet" id="mainTheme">
+<link href="http://responsivewebinc.com/premium/renata2/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://responsivewebinc.com/premium/renata2/css/animate.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="static/css/sty.css" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-head">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <!-- Logo and Head Text -->
+              <div class="logo">
+                <!-- Logo Icon and Heading -->
+                <img src="http://responsivewebinc.com/premium/renata2/img/logo.png" class="img-responsive" alt="" /><span>{{head_name_1.name}}</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://127.0.0.1:8000">{{navigation_1.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/allcompany">{{navigation_2.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/be">{{navigation_3.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/youxiu">{{navigation_5.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/pin.html">{{navigation_6.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/liucheng">{{navigation_7.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/faq">{{navigation_8.name}}</a></li>
+              
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+    </div>
+<!-- head End --> 
+<div style="height:150px"></div>
+<!-- FAQ -->
+<h3 class="lg-title">{{navigation_8.name}}</h3>
+<p class="subtitle-v2 ">{{navigation_8.intr}}</p>
+<div class="panel-group" id="accordion">
+  {%for i in p%}
+  <div class="panel panel-default"> <a data-toggle="collapse" data-parent="#accordion" href="#{{i.id}}">
+    <div class="panel-heading">
+      <h4 class="panel-title"><i class="fa fa-user"></i>{{i.problem}}</h4>
+    </div>
+    </a>
+    <div id="{{i.id}}" class="panel-collapse collapse">
+      <div class="panel-body">
+        <h5 class="title-sm-v2">{{i.answer|linebreaks}}</h5>
+      </div>
+    </div>
+  </div>
+  {%endfor%}
+  <div class="panel panel-default"> <a data-toggle="collapse" data-parent="#accordion" href="#c2">
+    <div class="panel-heading">
+      <h4 class="panel-title"><i class="fa fa-lock"></i>Safety & Security</h4>
+    </div>
+    </a>
+    <div id="c2" class="panel-collapse collapse">
+      <div class="panel-body">
+        <h5 class="title-sm-v2">Anim pariatur cliche, enim eiusmod high life?</h5>
+        <p class="text-muted">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.</p>
+        <ol>
+          <li>Anderson cred nesciunt.</li>
+          <li>Anderson cred nesciunt.</li>
+          <li>Anderson cred nesciunt.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default"> <a data-toggle="collapse" data-parent="#accordion" href="#c3">
+    <div class="panel-heading">
+      <h4 class="panel-title"><i class="fa fa-phone"></i>Mobile & Apps</h4>
+    </div>
+    </a>
+    <div id="c3" class="panel-collapse collapse">
+      <div class="panel-body">
+        <h5 class="title-sm-v2">Anim pariatur cliche, enim eiusmod high life?</h5>
+        <span class="text-muted">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.</span>
+        <div class="space-sm"></div>
+        <h5 class="title-sm-v2">Anim pariatur cliche, enim eiusmod high life?</h5>
+        <span class="text-muted">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.</span> </div>
+    </div>
+  </div>
+  <div class="panel panel-default"> <a data-toggle="collapse" data-parent="#accordion" href="#c5">
+    <div class="panel-heading">
+      <h4 class="panel-title"><i class="fa fa-credit-card"></i>Billing information</h4>
+    </div>
+    </a>
+    <div id="c5" class="panel-collapse collapse">
+      <div class="panel-body">
+        <h5 class="title-sm-v2">Anim pariatur cliche, enim eiusmod high life?</h5>
+        <span class="text-muted">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.</span>
+        <div class="space-sm"></div>
+        <h5 class="title-sm-v2">Anim pariatur cliche, enim eiusmod high life?</h5>
+        <span class="text-muted">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.</span> </div>
+    </div>
+  </div>
+</div>
+<div class="space-lg"></div>
+<div class="panel panel-default bg-grey text-center wow fadeIn">
+  <div class="panel-body">
+    <h4 class="wow fadeIn" data-wow-delay="0.25s">如果这里找不到答案 可以联系客服</h4>
+    <div class="space-sm"></div>
+    <ul class="list-inline wow fadeIn contact-box" data-wow-delay="0.5s">
+      <li> <a href="#s5" class="btn btn-primary scroll"> <i class="fa fa-envelope"></i>service@jeapedu.com </a> </li>
+      <li> <a href="#" class="btn btn-primary-trn"> <i class="fa fa-phone"></i>+86 153 1153 1358</a> </li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+<!--=== SCRIPTS ===--> 
+
+<!-- JQUERY --> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> 
+
+<!-- BOOTSTRAP --> 
+<script src="static/js/allcom/bootstrap.js"></script></body>
+</html>

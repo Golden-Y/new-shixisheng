@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <title>{{navigation_6.name}}</title>
+	<link rel="stylesheet" href="http://azmind.com/wrapbootstrap/trilli-bi/v1-0/assets/elegant-font/code/style.css">
+	<link rel="stylesheet" href="http://azmind.com/wrapbootstrap/trilli-bi/v1-0/assets/bootstrap/css/bootstrap.min.css">
+	<link href="http://responsivewebinc.com/premium/renata2/css/animate.min.css" rel="stylesheet">
+    <link href="static/css/sty.css" rel="stylesheet">
+
+	<link href="http://c.58cdn.com.cn/ui7/job/resume/jianli-post_v0.css" rel="stylesheet" />
+
+	<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+	<script>tinymce.init({selector:'textarea'});</script>
+</head>
+<body>
+	<!-- Head Start -->
+    <div class="nav-head">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <!-- Logo and Head Text -->
+              <div class="logo">
+                <!-- Logo Icon and Heading -->
+                <img src="http://responsivewebinc.com/premium/renata2/img/logo.png" class="img-responsive" alt="" /><span>{{head_name_1.name}}</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://127.0.0.1:8000">{{navigation_1.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/allcompany">{{navigation_2.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/be">{{navigation_3.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/youxiu">{{navigation_5.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/pin.html">{{navigation_6.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/liucheng">{{navigation_7.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/faq">{{navigation_8.name}}</a></li>
+              
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+    </div>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<section>
+		<body class="postFirPage">
+			<div style="height:100px;"></div>
+			<div class="logHeader" id="" style="margin-top:0px;">
+				<div id="" class="loginName">
+					<span class="btn btn-warning">正在创建招聘信息</span>
+				</div>
+			</div>
+			<div class="infoContent">
+				<form action="/zhaopin" method="POST">
+					{%csrf_token%}
+					<div class="perIcon perIcon5" style="display:none"></div>
+					<dl class="">
+						<dt>
+							公司名称
+							<b>*</b>
+						</dt>
+						<dd>
+							<input type="text" name="name" value="{{mingcheng}}"/> 
+							<b style="color:red;">{{a}}</b>
+						</dd>
+					</dl>
+					<dl class="jobType ">
+						<dt>
+							岗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位
+							<b>*</b>
+						</dt>
+						<dd class="" style=""><!--class="zIndex999"-->
+							<input type="text" name="gangwei" value="{{gangwei}}"/> 
+							<b style="color:red;">{{b}}</b>
+						</dd>
+					</dl>
+					<dl class="expSalary ">
+						<dt>
+							薪资范围
+							<b>*</b>
+						</dt>
+						<dd class="">
+
+							<input type="text" name="xinzi" value="2500-3000"></input>
+							<b style="color:red;">{{c}}</b>
+						</dd>
+					</dl>
+					<dl class="nameSex ">
+						<dt>
+							工作地点
+							<b>*</b>
+						</dt>
+						<dd class="">
+							<input type="text" name="didian" value="北京"></input>
+							<b style="color:red;">{{d}}</b>
+						</dd>
+					</dl>
+					<dl class="birTime">
+						<dt>
+							招聘人数
+							<b>*</b>
+						</dt>
+						<dd class="">
+							<input type="text" name="renshu" value="3-5"></input>
+							<b style="color:red;">{{e}}</b>
+						</dd>
+					</dl>
+					<dl class="">
+						<dt>
+							岗位介绍
+							<b>*</b>
+						</dt>
+						<dd class="">
+							<textarea name= "jianjie"></textarea>
+							<b style="color:red;">{{f}}</b>
+						</dd>
+					</dl>
+					<div class="subBtnCon ">
+					<input class="saveResume postBtn" id="btninfo" value="提交信息" type="submit" />
+					</div>
+				</form>
+			</div>
+		</body>
+	</section>
+ <script src="http://responsivewebinc.com/premium/renata2/js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="http://responsivewebinc.com/premium/renata2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

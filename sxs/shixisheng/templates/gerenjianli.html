@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10;IE=9;IE=8;IE=7;IE=EDGE">
+
+<script id="allmobilize" charset="utf-8" src="http://a.yunshipei.com/ef48a3377914af6ef846830fcae2a8e6/allmobilize.min.js"></script>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate" media="handheld" href="#" />
+
+<meta charset="utf-8">
+<title>{{s.name}}--个人简历</title>
+
+
+<link rel="Shortcut Icon" href="static/images/assets/favicon.ico">
+<link rel="stylesheet" type="text/css" href="http://www.lagou.com/css/style.css?v=1.5.5.7_0202"/>
+<link rel="stylesheet" type="text/css" href="http://hr.lagou.com/css/style.css?v=1.5.5.7_0202"/>
+<link rel="stylesheet" type="text/css" href="http://www.lagou.com/css/myresume.css?v=1.5.5.7_0202"/>
+    <link href="http://responsivewebinc.com/premium/renata2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://responsivewebinc.com/premium/renata2/css/animate.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../static/css/sty.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Head Start -->
+    <div class="nav-head">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <!-- Logo and Head Text -->
+              <div class="log">
+                <!-- Logo Icon and Heading -->
+                <img src="http://responsivewebinc.com/premium/renata2/img/logo.png" class="img-responsi" alt="" /><span style="color: #fff;font-family: 'Open Sans Condensed',sans-serif;font-size: 38px;font-weight: 700;position: relative;top: 5px;">{{head_name_1.name}}</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://127.0.0.1:8000">{{navigation_1.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/allcompany">{{navigation_2.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/be">{{navigation_3.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/youxiu">{{navigation_5.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/pin.html">{{navigation_6.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/liucheng">{{navigation_7.name}}</a></li>
+              <li><a href="http://127.0.0.1:8000/faq">{{navigation_8.name}}</a></li>
+              
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+    </div>
+    <!-- Menu Bar End -->
+    <div style="height:100px"></div>
+<div id="body">
+<div class="mr_created mr_preview">
+  <div class="mr_myresume_l mrcenter">
+    <div id="mr_mr_head">
+      <div class="mr_top_bg" id="baseinfo"> <img src="http://www.lagou.com/images/myresume/default_headpic.png" alt="" /> <img src="http://www.lagou.com/images/myresume/tou.png" class="opa" alt="" /> <img src="http://www.lagou.com/images/myresume/shadow_tx.png" alt="" class="shadow"/> </div>
+      <div class="mr_baseinfo"> <i class="mr_left_bg"></i> <i class="mr_right_bg"></i>
+        <div class="mr_p_name mr_w604 clearfixs"> <span class="mr_name"> {{s.name}} </span> </div>
+        
+        <div class="mr_p_info mr_infoed mr_w604 clearfixs">
+          <div class="info_t"> 
+            <span  class=""> <i></i> 
+            <em class="s">适合职位：</em><em style="color:red;">{{s.position}}</em> 
+          </span> 
+          <span class=""><i></i>
+            <em class="s">年级：</em><em class="x">{{s.grade}}</em>
+          </span> 
+          <span class=""><i></i>
+            <em class="s">期望工作地点：</em><em class="x">{{s.place}}</em>
+          </span> 
+        </div>
+          <div class="info_b"> <span class=""><i></i>联系方式：<em> {{s.contact}} </em></span> <span class=""><i></i>期望薪资：<em> {{s.salary}} </em></span> </div>
+          <div  class="mr_sns dn"> </div>
+        </div>
+      </div>
+    </div>
+    <div class="mr_content">
+      <div class="mr_w604">
+        <div id="educationalBackground">
+          <div>
+            <div class="mr_moudle_head clearfixs">
+              <div class="mr_head_l">
+                <div class="mr_title"> <span class="mr_title_l"></span><span class="mr_title_c">自我介绍</span><span class="mr_title_r"></span> </div>
+              </div>
+            </div>
+            <div class="mr_moudle_content">
+              <div class="clearfixs mb46 mr_jobe_list">
+                <div class="mr_content_l">
+                  <div class="l2">
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;{{s.intr|safe}}</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mr_self_state"> 
+        <div class="form_wrap mr_self_s resume_status"> ·&nbsp;选我！选我！&nbsp;· </div>
+      </div>
+    </div>
+    <div class="mr_bottom_r" id="mr_pre_bot"> <span>© {{s.name}}  简历创建于{{s.date}} Powered by shixisheng.cc</span> </div>
+    
+  </div>
+</div>
+<script src="http://responsivewebinc.com/premium/renata2/js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="http://responsivewebinc.com/premium/renata2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
