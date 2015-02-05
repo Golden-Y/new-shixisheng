@@ -38,9 +38,9 @@
 		<script src="js/respond.min.js"></script>
 	<![endif]-->
 		
-	<script type="text/javascript" src="static/js/shapes/modernizr.min.js"></script>
+	<script type="text/javascript" src="/static/js/shapes/modernizr.min.js"></script>
 	<script>
-	function SetWinHeight(obj) 
+	function SetWinHeight2(obj,x) 
 	{ 
 		var win=obj; 
 		if (document.getElementById) 
@@ -48,37 +48,9 @@
 			if (win && !window.opera) 
 			{ 
 				if (win.contentDocument && win.contentDocument.body.offsetHeight) 
-				win.height = win.contentDocument.body.offsetHeight+550; 
+				win.height = win.contentDocument.body.offsetHeight+x; 
 				else if(win.Document && win.Document.body.scrollHeight) 
-				win.height = win.Document.body.scrollHeight+550; 
-			} 
-		} 
-	} 
-	function SetWinHeight2(obj) 
-	{ 
-		var win=obj; 
-		if (document.getElementById) 
-		{ 
-			if (win && !window.opera) 
-			{ 
-				if (win.contentDocument && win.contentDocument.body.offsetHeight) 
-				win.height = win.contentDocument.body.offsetHeight+380; 
-				else if(win.Document && win.Document.body.scrollHeight) 
-				win.height = win.Document.body.scrollHeight+380; 
-			} 
-		} 
-	} 
-	function SetWinHeight3(obj) 
-	{ 
-		var win=obj; 
-		if (document.getElementById) 
-		{ 
-			if (win && !window.opera) 
-			{ 
-				if (win.contentDocument && win.contentDocument.body.offsetHeight) 
-				win.height = win.contentDocument.body.offsetHeight+400; 
-				else if(win.Document && win.Document.body.scrollHeight) 
-				win.height = win.Document.body.scrollHeight+400; 
+				win.height = win.Document.body.scrollHeight+x; 
 			} 
 		} 
 	} 
@@ -106,7 +78,7 @@
 					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 				<!-- ======= LOGO ========-->
-				<a class="navbar-brand scrollto" href="#home">{{head_name_1.name}}<span> / {{head_name_2.name}}</span></a>
+				<a class="navbar-brand scrollto" href="#home"><img src="/static/images/logo_1.png"><img></a>
 				<!-- <a class="navbar-brand scrollto ir-logo" href="#home">SHAPES<span> / Creative Studio</span></a> -->
 			</div>
 			<div id="site-nav" class="navbar-collapse collapse">
@@ -145,7 +117,7 @@
 	<header id="home" class="">
 		<div class="">
 
-			<iframe width="100%" align="center" height="" id="win" name="win" onload="Javascript:SetWinHeight(this)" frameborder="0" src="x"></iframe>
+			<iframe width="100%" align="center" height="" id="win" name="win" onload="Javascript:SetWinHeight2(this,550)" frameborder="0" src="x"></iframe>
 		</div><!--End container -->
 	</header><!--End header -->
 		
@@ -280,151 +252,8 @@
 							
 						</article>
 						
-						<article class="project-item apps video y2012">
-							<a href="#">
-								<img class="img-responsive project-thumb" src="http://q-themes.net/themes/shapes/assets/projects/joyl.jpg"  alt=""><!--Project thumb -->
-								
-								<div class="details">
-									<h3 class="project-title">Joyl</h3><!--Project Title -->
-									<small>Apps, Video</small><!--Project Categories -->
-								</div>
-							</a>
-							<!--==== Project Preview ====-->
-							<div class="sr-only">
-								<div class="project-media" data-video='<iframe src="http://my.tv.sohu.com/us/114776677/77739739.shtml" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'></div>
-								<div class="project-attributes">
-									<div class="newline"><span>Date : </span>June 2012</div>
-									<div class="newline"><span>Client : </span>Microsoft Inc.</div>
-									<div class="newline"><span>Categories : </span>Apps</div>
-									<div class="newline"><span>Website : </span><a href="#link">www.example.com</a></div>
-								</div>
-							
-								<div class="project-description">
-								
-									<div class="col-md-6">
-										<h2>The Challenge</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-									</div>
-									
-									<div class="col-md-6">
-										<h2>The Solution</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-									</div>
-									
-								</div>
-							</div><!-- End Project Preview -->
-							
-						</article>
 						
-						<article class="project-item web-design apps video y2012">
-							<a href="#">
-								<img class="img-responsive project-thumb" src="http://q-themes.net/themes/shapes/assets/projects/record.jpg"  alt=""><!--Project thumb -->
-								
-								<div class="details">
-									<h3 class="project-title">Record</h3><!--Project Title -->
-									<small>Web design, Video</small><!--Project Categories -->
-								</div>
-							</a>
-							<!--==== Project Preview ====-->
-							<div class="sr-only">
-								<div class="project-media" data-video='<iframe src="http://player.vimeo.com/video/58241892" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'></div>
-								<div class="project-attributes">
-									<div class="newline"><span>Date : </span>April 2012</div>
-									<div class="newline"><span>Client : </span>Google Inc.</div>
-									<div class="newline"><span>Categories : </span>Web Design, Apps</div>
-									<div class="newline"><span>Website : </span><a href="#link">www.example.com</a></div>
-								</div>
-							
-								<div class="project-description">
-								
-									<div class="col-md-12">
-										<h2>The Challenge</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-									</div>
-									
-								</div>
-							</div><!-- End Project Preview -->
-							
-						</article>
-							
-						<article class="project-item apps ui-kits video y2011">
-							<a href="#">
-								<img class="img-responsive project-thumb" src="http://q-themes.net/themes/shapes/assets/projects/coffe_connect.jpg"  alt=""><!--Project thumb -->
-								
-								<div class="details">
-									<h3 class="project-title">Coffee Connect</h3><!--Project Title -->
-									<small>UI-Kits, Video</small><!--Project Categories -->
-								</div>
-							</a>
-							<!--==== Project Preview ====-->
-							<div class="sr-only">
-								<div class="project-media" data-video='<iframe width="640" height="360" src="http://www.youtube.com/embed/JOP-_8TFWn8?feature=player_detailpage&amp;html5=1" frameborder="0" allowfullscreen></iframe>'></div>
-								<div class="project-attributes">
-									<div class="newline"><span>Date : </span>November 2011</div>
-									<div class="newline"><span>Client : </span>Company SA</div>
-									<div class="newline"><span>Categories : </span>Apps, UI Kits</div>
-									<div class="newline"><span>Website : </span><a href="#link">www.example.com</a></div>
-								</div>
-							
-								<div class="project-description">
-								
-									<div class="col-md-4">
-										<h2>The Challenge</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-									</div>
-									
-									<div class="col-md-4">
-										<h2>The Solution</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-									</div>
-									
-									<div class="col-md-4">
-										<h2>The Result</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-									</div>
-									
-								</div>
-							</div><!-- End Project Preview -->
-							
-						</article>
-						
-						<article class="project-item ui-kits video y2011">
-							<a href="#">
-								<img class="img-responsive project-thumb" src="http://q-themes.net/themes/shapes/assets/projects/tagbrand.jpg"  alt=""><!--Project thumb -->
-								
-								<div class="details">
-									<h3 class="project-title">Tagbrand</h3><!--Project Title -->
-									<small>UI-Kits, Video</small><!--Project Categories -->
-								</div>
-							</a>
-							<!--==== Project Preview ====-->
-							<div class="sr-only">
-								<div class="project-media" data-video='<iframe width="640" height="360" src="http://www.youtube.com/embed/JuyB7NO0EYY?feature=player_detailpage&amp;html5=1" frameborder="0" allowfullscreen></iframe>'></div>
-								<div class="project-attributes">
-									<div class="newline"><span>Date : </span>October 2011</div>
-									<div class="newline"><span>Client : </span>Microsoft Inc.</div>
-									<div class="newline"><span>Categories : </span>UI Kits</div>
-									<div class="newline"><span>Website : </span><a href="#link">www.example.com</a></div>
-								</div>
-							
-								<div class="project-description">
-								
-									<div class="col-md-6">
-										<h2>The Challenge</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-									</div>
-									
-									<div class="col-md-6">
-										<h2>The Solution</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-									</div>
-									
-								</div>
-							</div><!-- End Project Preview -->
-							
-						</article>
-						
+		
 						<article class="project-item apps image y2011">
 							<a href="#">
 								<img class="img-responsive project-thumb" src="http://q-themes.net/themes/shapes/assets/projects/owzzup.jpg"  alt=""><!--Project thumb -->
@@ -517,7 +346,7 @@
 			
 				<div class="row">
 					
-						<iframe width="100%" align="center" height="" id="win" name="win" onload="Javascript:SetWinHeight3(this)" frameborder="0" src="old.html"></iframe>
+						<iframe width="100%" align="center" height="" id="win" name="win" onload="Javascript:SetWinHeight2(this,400)" frameborder="0" src="old.html"></iframe>
 						
 					</div><!--End row -->
 						
@@ -596,7 +425,7 @@
 			
 				<div class="row">
 					
-					<iframe width="100%" align="center" height="" id="win" name="win" onload="Javascript:SetWinHeight2(this)" frameborder="0" src="third.html"></iframe>
+					<iframe width="100%" align="center" height="" id="win" name="win" onload="Javascript:SetWinHeight2(this,380)" frameborder="0" src="third.html"></iframe>
 				</div><!--End row -->
 				
 			</div><!--End container -->

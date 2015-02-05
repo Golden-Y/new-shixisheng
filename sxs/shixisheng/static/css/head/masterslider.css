@@ -44,7 +44,7 @@
 .ms-slide .ms-slide-loading {
 	width: 36px;
 	height: 36px;
-	background: url(http://the8guild.com/themes/html/kedavra/masterslider/style/loading-2.gif) no-repeat center white;
+	background: url(/static/images/loading-2.gif) no-repeat center white;
 	border-radius: 60px;
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
 	position: absolute;
@@ -57,7 +57,7 @@
 
 /* grab cursor */
 .ms-def-cursor{cursor:auto !important;}
-.ms-grab-cursor{cursor: url("http://the8guild.com/themes/html/kedavra/masterslider/style/grab.png"), move;}
+.ms-grab-cursor{cursor: url("/static/images/grab.png"), move;}
 .ms-grabbing-cursor{cursor: url("http://the8guild.com/themes/html/kedavra/masterslider/style/grabbing.png"), move;}
 .ms-ie .ms-grab-cursor{cursor: url("http://the8guild.com/themes/html/kedavra/masterslider/style/../masterslider/style/grab.cur"), move;}
 .ms-ie .ms-grabbing-cursor {cursor: url("http://the8guild.com/themes/html/kedavra/masterslider/style/../masterslider/style/grabbing.cur"), move;}
@@ -485,7 +485,7 @@
 .ms-skin-default .ms-video-btn{
 	width: 50px;
 	height: 51px;
-	background: url(http://the8guild.com/themes/html/kedavra/masterslider/style/../skins/default/http://the8guild.com/themes/html/kedavra/masterslider/style/../skins/default/light-skin-1.png) no-repeat -14px -150px;
+	background: url(/static/images/light-skin-1.png) no-repeat -14px -150px;
 	top: 50%;
 	left: 50%;
 	margin: -25px 0 0 -25px;
@@ -493,7 +493,7 @@
 .ms-skin-default .ms-slide .ms-slide-vcbtn {
 	width: 30px;
 	height: 30px;
-	background: url(http://the8guild.com/themes/html/kedavra/masterslider/style/../skins/default/light-skin-1.png) no-repeat -24px -28px;
+	background: url(/static/images/light-skin-1.png) no-repeat -24px -28px;
 	top: 18px;
 	right: 30px;
 }
@@ -502,7 +502,7 @@
 .ms-skin-default .ms-nav-next,
 .ms-skin-default .ms-nav-prev {
 	width: 30px;
-	background: url(http://the8guild.com/themes/html/kedavra/masterslider/style/../skins/default/light-skin-1.png);
+	background: url(/static/images/light-skin-1.png);
 	background-position: -89px -26px;
 	height: 40px;
 	cursor: pointer;
@@ -520,7 +520,7 @@
 .ms-skin-default .ms-bullet {
 	width: 10px;
 	height: 10px;
-	background: url(http://the8guild.com/themes/html/kedavra/masterslider/style/../skins/default/light-skin-1.png) no-repeat;
+	background: url(/static/images/light-skin-1.png) no-repeat;
 	margin: 4px;
 	background-position: -34px -117px;
 }
