@@ -203,4 +203,3 @@ def zpxx(request,cid):
 	for i in t:
 		d[i.category]=i
 	return TR(request,"zhaopinxinxi.html",d)
-

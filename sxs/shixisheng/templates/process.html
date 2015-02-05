@@ -1,63 +1,23 @@
+{% extends "base.html" %}
 <!DOCTYPE html>
 <html>
 <head>
-	<title>实习流程</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	 <meta name="description" content="Your description">
-    <meta name="keywords" content="Your,Keywords">
-    <meta name="author" content="ResponsiveWebInc">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
-
-		<link href="http://demo.cssmoban.com/cssthemes2/dgfp_10_cvf/css/style.css" rel="stylesheet" type="text/css"  />
-		<link href="http://responsivewebinc.com/premium/renata2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://responsivewebinc.com/premium/renata2/css/animate.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="static/css/sty.css" rel="stylesheet">
-</head>
+{% block css %}
+<title>实习流程</title>
+		<link href="/static/css/liucheng/style.css" rel="stylesheet" type="text/css"  />
+    <script src="/static/css/liucheng/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#u").removeClass("nav navbar-nav navbar-right").addClass("navbar-nav navbar-right");
+    $("#ls").css({'top': '-15px'});
+  });
+</script>
+    {% endblock %}
 
 
 <body>
-	    <!-- Head Start -->
-    <div class="nav-head">
-      <!-- Navigation Bar -->
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <!-- Logo and Head Text -->
-              <div class="logo">
-                <!-- Logo Icon and Heading -->
-                <img src="http://responsivewebinc.com/premium/renata2/img/logo.png" class="img-responsive" alt="" /><span>{{head_name_1.name}}</span>
-              </div>
-            </a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="navbar-nav navbar-right">
-              <li><a href="/">{{navigation_1.name}}</a></li>
-              <li><a href="/allcompany">{{navigation_2.name}}</a></li>
-              <li><a href="/be">{{navigation_3.name}}</a></li>
-              <li><a href="/youxiu">{{navigation_5.name}}</a></li>
-              <li><a href="/pin.html">{{navigation_6.name}}</a></li>
-              <li><a href="/liucheng">{{navigation_7.name}}</a></li>
-              <li><a href="/faq">{{navigation_8.name}}</a></li>
-              
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div>
-      </nav>
-    </div>
+  {% block content %}
 
 
 	
@@ -86,10 +46,7 @@
                 </div>
    		 </div>    
    		</div>
- 	<script src="http://responsivewebinc.com/premium/renata2/js/jquery.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="http://responsivewebinc.com/premium/renata2/js/bootstrap.min.js"></script>
-
+{% endblock %}
    	
 </body>
 </html>

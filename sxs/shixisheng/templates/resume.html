@@ -1,55 +1,19 @@
+{% extends "base.html" %}
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="http://azmind.com/wrapbootstrap/trilli-bi/v1-0/assets/elegant-font/code/style.css">
-  <link rel="stylesheet" href="http://azmind.com/wrapbootstrap/trilli-bi/v1-0/assets/bootstrap/css/bootstrap.min.css">
-  <link href="http://responsivewebinc.com/premium/renata2/css/animate.min.css" rel="stylesheet">
-    <link href="static/css/sty.css" rel="stylesheet">
+  {% block css %}
+  <link rel="stylesheet" href="/static/css/zhaopin/style.css">
+  <link rel="stylesheet" href="/static/css/zhaopin/bootstrap.min.css">
   <title>{{navigation_7.name}}</title>
-  <link href="http://c.58cdn.com.cn/ui7/job/resume/jianli-post_v0.css" rel="stylesheet" />
+  <link href="/static/css/zhaopin/jianli-post_v0.css" rel="stylesheet" />
 
-  <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+  <script src="/static/js/tinymce_4.1.7/tinymce/js/tinymce/tinymce.min.js"></script>
   <script>tinymce.init({selector:'textarea'});</script>
+  {% endblock %}
 </head>
 <body>
-  <!-- Head Start -->
-    <div class="nav-head">
-      <!-- Navigation Bar -->
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <!-- Logo and Head Text -->
-              <div class="logo">
-                <!-- Logo Icon and Heading -->
-                <img src="http://responsivewebinc.com/premium/renata2/img/logo.png" class="img-responsive" alt="" /><span>{{head_name_1.name}}</span>
-              </div>
-            </a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/">{{navigation_1.name}}</a></li>
-              <li><a href="/allcompany">{{navigation_2.name}}</a></li>
-              <li><a href="/be">{{navigation_3.name}}</a></li>
-              <li><a href="/youxiu">{{navigation_5.name}}</a></li>
-              <li><a href="/pin.html">{{navigation_6.name}}</a></li>
-              <li><a href="/liucheng">{{navigation_7.name}}</a></li>
-              <li><a href="/faq">{{navigation_8.name}}</a></li>
-              
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div>
-      </nav>
-    </div>
+  {% block content %}
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   
   <section>
@@ -151,9 +115,6 @@
       </div>
     </body>
   </section>
- <script src="http://responsivewebinc.com/premium/renata2/js/jquery.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="http://responsivewebinc.com/premium/renata2/js/bootstrap.min.js"></script>
-
+{% endblock %}
 </body>
 </html>

@@ -1,71 +1,36 @@
+{% extends "base.html" %}
 <!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=10;IE=9;IE=8;IE=7;IE=EDGE">
 
-<script id="allmobilize" charset="utf-8" src="http://a.yunshipei.com/ef48a3377914af6ef846830fcae2a8e6/allmobilize.min.js"></script>
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-<link rel="alternate" media="handheld" href="#" />
 
+{% block css %}
 <meta charset="utf-8">
 <title>{{s.name}}--个人简历</title>
 
 
 <link rel="Shortcut Icon" href="static/images/assets/favicon.ico">
-<link rel="stylesheet" type="text/css" href="http://www.lagou.com/css/style.css?v=1.5.5.7_0202"/>
-<link rel="stylesheet" type="text/css" href="http://hr.lagou.com/css/style.css?v=1.5.5.7_0202"/>
-<link rel="stylesheet" type="text/css" href="http://www.lagou.com/css/myresume.css?v=1.5.5.7_0202"/>
-    <link href="http://responsivewebinc.com/premium/renata2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://responsivewebinc.com/premium/renata2/css/animate.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../static/css/sty.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/static/css/grjl/style.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/hr/style.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/grjl/myresume.css"/>
+<script src="/static/js/shapes/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#lo").removeClass("logo").addClass("log");
+    $("#ls").css({'color': '#fff','font-family':" 'Open Sans Condensed',sans-serif",'font-size': '38px','font-weight': '700','position': 'relative','top': '-35px','left':'50px'});
+  });
+</script>
+{%endblock%}
 </head>
 <body>
-  <!-- Head Start -->
-    <div class="nav-head">
-      <!-- Navigation Bar -->
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <!-- Logo and Head Text -->
-              <div class="log">
-                <!-- Logo Icon and Heading -->
-                <img src="http://responsivewebinc.com/premium/renata2/img/logo.png" class="img-responsi" alt="" /><span style="color: #fff;font-family: 'Open Sans Condensed',sans-serif;font-size: 38px;font-weight: 700;position: relative;top: 5px;">{{head_name_1.name}}</span>
-              </div>
-            </a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/">{{navigation_1.name}}</a></li>
-              <li><a href="/allcompany">{{navigation_2.name}}</a></li>
-              <li><a href="/be">{{navigation_3.name}}</a></li>
-              <li><a href="/youxiu">{{navigation_5.name}}</a></li>
-              <li><a href="/pin.html">{{navigation_6.name}}</a></li>
-              <li><a href="/liucheng">{{navigation_7.name}}</a></li>
-              <li><a href="/faq">{{navigation_8.name}}</a></li>
-              
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div>
-      </nav>
-    </div>
-    <!-- Menu Bar End -->
+  {% block content %}
     <div style="height:100px"></div>
 <div id="body">
 <div class="mr_created mr_preview">
   <div class="mr_myresume_l mrcenter">
     <div id="mr_mr_head">
-      <div class="mr_top_bg" id="baseinfo"> <img src="http://www.lagou.com/images/myresume/default_headpic.png" alt="" /> <img src="http://www.lagou.com/images/myresume/tou.png" class="opa" alt="" /> <img src="http://www.lagou.com/images/myresume/shadow_tx.png" alt="" class="shadow"/> </div>
+      <div class="mr_top_bg" id="baseinfo"> <img src="/static/images/default_headpic.png" alt="" /> <img src="/static/images/tou.png" class="opa" alt="" /> <img src="/static/images/shadow_tx.png" alt="" class="shadow"/> </div>
       <div class="mr_baseinfo"> <i class="mr_left_bg"></i> <i class="mr_right_bg"></i>
         <div class="mr_p_name mr_w604 clearfixs"> <span class="mr_name"> {{s.name}} </span> </div>
         
@@ -115,10 +80,6 @@
     
   </div>
 </div>
-<script src="http://responsivewebinc.com/premium/renata2/js/jquery.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="http://responsivewebinc.com/premium/renata2/js/bootstrap.min.js"></script>
-
-
+{% endblock %}
 </body>
 </html>

@@ -1,57 +1,24 @@
-
+{% extends "base.html" %}
 <!DOCTYPE HTML>
 <html>
 <head>
+{% block css %}
 <meta http-equiv="X-UA-Compatible" content="IE=10;IE=9;IE=8;IE=7;IE=EDGE">
 <meta charset="utf-8">
 <title>{{c.name}}--招聘信息</title>
-<link rel="stylesheet" type="text/css" href="http://www.lagou.com/css/style.css?v=1.5.5.7_0202"/>
-<link rel="stylesheet" type="text/css" href="http://hr.lagou.com/css/style.css?v=1.5.5.7_0202"/>
- <link href="http://responsivewebinc.com/premium/renata2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://responsivewebinc.com/premium/renata2/css/animate.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../static/css/sty.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/static/css/grjl/style.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/hr/style.css"/>
+<script src="/static/js/shapes/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#lo").removeClass("logo").addClass("log");
+    $("#ls").css({'color': '#fff','font-family':" 'Open Sans Condensed',sans-serif",'font-size': '38px','font-weight': '700','position': 'relative','top': '-35px','left':'50px'});
+  });
+</script>
+{% endblock %}
 </head>
 <body>
-  <!-- Head Start -->
-    <div class="nav-head">
-      <!-- Navigation Bar -->
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <!-- Logo and Head Text -->
-              <div class="log">
-                <!-- Logo Icon and Heading -->
-                <img src="http://responsivewebinc.com/premium/renata2/img/logo.png" class="img-responsi" alt="" /><span style="color: #fff;font-family: 'Open Sans Condensed',sans-serif;font-size: 38px;font-weight: 700;position: relative;top: 5px;">{{head_name_1.name}}</span>
-              </div>
-            </a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/">{{navigation_1.name}}</a></li>
-              <li><a href="/allcompany">{{navigation_2.name}}</a></li>
-              <li><a href="/be">{{navigation_3.name}}</a></li>
-              <li><a href="/youxiu">{{navigation_5.name}}</a></li>
-              <li><a href="/pin.html">{{navigation_6.name}}</a></li>
-              <li><a href="/liucheng">{{navigation_7.name}}</a></li>
-              <li><a href="/faq">{{navigation_8.name}}</a></li>
-              
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div>
-      </nav>
-    </div>
-    <!-- Menu Bar End -->
+  {% block content %}
     <div style="height:100px"></div>
 
 <div class="content_l"  style="padding-left:20%;width:80%">
@@ -73,11 +40,8 @@
     </dd>
     
   </dl>
-  <div id="weibolist"></div>
 </div>
-
-    <script src="http://responsivewebinc.com/premium/renata2/js/jquery.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="http://responsivewebinc.com/premium/renata2/js/bootstrap.min.js"></script>
+<div style="height:110%"></div>
+{% endblock %}
 </body>
 </html>

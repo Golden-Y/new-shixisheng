@@ -1776,7 +1776,6 @@ button .fa-angle-double-right::before {
   .navbar .navbar-nav > li > a {
     padding-top: 28px;
     padding-bottom: 28px;
-    height: 70px;
   }
 }
 @media (max-width: 767px) {
